@@ -1,0 +1,1 @@
+"C:\Program Files\VideoLAN\VLC\vlc.exe" -vvv https://youtu.be/TbsKGZIcwgQ --sout=#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100}:file{dst=C:\\Users\\2raywall\\Desktop\\prueba.mp4,no-overwrite} :sout-keep --stop-time 120

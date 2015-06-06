@@ -1,0 +1,9 @@
+se le pasan 3 parametros
+1- ruta donde se encuentra el vlc.exe --> ej: C:\Program Files\VideoLAN\VLC\vlc.exe
+2- ruta del streaming por http/https --> ej: https://youtu.be/AR1Qoy6HSkQ
+3- ruta donde se va a guardar el fichero y el nombre del fichero --> ej: C:\\Users\\2raywall\\Desktop\\prueba.mp4
+
+ej script
+"C:\Program Files\VideoLAN\VLC\vlc.exe" -vvv https://youtu.be/AR1Qoy6HSkQ --sout=#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100}:file{dst=C:\\Users\\2raywall\\Desktop\\prueba.mp4,no-overwrite} :sout-keep
+
+"C:\Program Files\VideoLAN\VLC\vlc.exe" --key-stop 'stop'
